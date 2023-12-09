@@ -23,7 +23,7 @@
 
         <div class="col2">
         <h2>Login</h2>
-        <form class="" action="cek_login.php" method="post" autocomplete="off">
+        <form class="" action="login-cek.php" method="post" autocomplete="off">
           <input type="text" name="username" class="form_login" placeholder="Username .." required="required"> <br>
           <input type="password" name="password" class="form_login" placeholder="Password .." required="required"> <br>
           
