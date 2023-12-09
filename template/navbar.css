@@ -1,0 +1,13 @@
+nav{
+    background-color: rgb(173, 71, 53);
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-nav{
+    width: 90%;
+
+}
