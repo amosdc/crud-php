@@ -20,31 +20,7 @@ $cek = mysqli_num_rows($login);
 if($cek > 0){
  
 	$data = mysqli_fetch_assoc($login);
- 
-	// cek jika user login sebagai admin
-	if($data['level']=="admin"){
- 
-		// buat session login dan username
-		$_SESSION['username'] = $username;
-		$_SESSION['level'] = "admin";
-	
-		// alihkan ke halaman dashboard admin
-		header("location: adminpanel/index.php");
- 
-	// cek jika user login sebagai pegawai
-	}else if($data['level']=="user"){
-		// buat session login dan username
-		$_SESSION['username'] = $username;
-		$_SESSION['level'] = "pegawai";
-		// alihkan ke halaman dashboard pegawai
-		header("location:index.php");
- 
-	// cek jika user login sebagai pengurus
-	}else{
- 
-		// alihkan ke halaman login kembali
-		header("location:index.php?pesan=gagal");
-	}	
+	header("location:index.php");	
 }else{
 	header("location:index.php?pesan=gagal");
 }
